@@ -13,7 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.container{
+.project__container{
     padding: 50px 0;
     width: 100%;
 }
@@ -164,7 +164,7 @@ THEME TOGGLE
 }
 
 .nav__link{
-    margin: 0 12px;
+    margin: 0 28px;
     cursor: pointer;
 }
 
@@ -409,9 +409,16 @@ MODAL
     color:orange;
 }
 
-.modal__languages{
+.languages__container{
+    text-align: center;
+}
+
+.languages{
     display: flex;
     flex-wrap: wrap;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .language{
@@ -439,7 +446,7 @@ MODAL
     opacity: 0;
     transform: scale(0.2);
     transition: all 300ms ease;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .language:hover .language__name{
@@ -743,6 +750,10 @@ footer{
         height: auto;
         width: 90%;
         flex-direction: column-reverse;
+    }
+
+    .languages{
+        width: 90%;
     }
 
     .modal__half{

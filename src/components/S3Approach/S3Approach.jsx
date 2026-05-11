@@ -10,7 +10,7 @@ const Approach = (props) => {
                         <div class="quality__text">
                             <div class="quality__text--container">
                                 <p class="section__label">THE APPROACH</p>
-                                <h1 class="project__section--title">My Role: <span class="purple">Web Developer</span></h1>
+                                <h1 class="project__section--title">My Role: <span class="purple">{props.desc.role}</span></h1>
                                 <p class="section__description">{props.desc.approachDesc}</p>
                                     <div>
                                         <div class="quality__bullet">

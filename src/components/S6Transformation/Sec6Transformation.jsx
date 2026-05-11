@@ -48,7 +48,7 @@ const Transformation = (props) => {
                                             <p class="cadence">RELIEF</p>
                                             <hr class="pricing__divider--top" />
 
-                                            <p class="feature__list audience">{props.desc.duringTitle1}</p>
+                                            <p class="feature__list audience">{props.desc.duringTitle}</p>
                                             <p class="feature__list">{props.desc.duringDesc1}</p>
                                             <p class="feature__list">{props.desc.duringDesc2}</p>
                                             <p class="feature__list">{props.desc.duringDesc3}</p>
@@ -73,7 +73,7 @@ const Transformation = (props) => {
                                             <p class="cadence">CERTAINTY</p>
                                             <hr class="pricing__divider--top" />
 
-                                            <p class="feature__list audience">{props.desc.afterTitle1}</p>
+                                            <p class="feature__list audience">{props.desc.afterTitle}</p>
                                             <p class="feature__list">{props.desc.afterDesc1}</p>
                                             <p class="feature__list">{props.desc.afterDesc2}</p>
                                             <p class="feature__list">{props.desc.afterDesc3}</p>

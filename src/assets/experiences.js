@@ -1,24 +1,46 @@
 import joielab_sneak from './Joie/joielab_sneak.png'
+import joie_hero from './Joie/joielab_hero.png'
 import kelsi from './Joie/kelsi portrait square.jpg'
 import joie_portfolio from './Joie/portfolio.pdf'
-import approach_banner from './Joie/shopping banner.webp'
+import joie_approach from './Joie/shopping banner.webp'
+
 import bilingual_sneak from './Bilingual/bilingual_sneak.png'
 import cannings from './Bilingual/Katharine Cannings.jpg'
 import bilingual_portfolio from './Bilingual/portfolio.pdf'
+import bilingual_hero from './Bilingual/Master_Logo-03.jpg'
+import bilingual_approach from './Bilingual/bilingual roadmap.png'
+
 import tqme_sneak from './TQME/TQME_sneak.jpg'
-import tqme from './TQME/TQME_sneak.jpg'
+import tqme_hero from './TQME/The Quarry Logo.png'
+import tqme_approach from './TQME/TQME hero.jpg'
+import tqme_client from './TQME/TQME client.jpg'
 import tqme_portfolio from './TQME/portfolio.pdf'
+
 import versa_sneak from './Versa/versa_sneak.png'
 import francesco from './Versa/Francesco_Bowling cropped.jpg'
 import versa_portfolio from './Versa/portfolio.pdf'
+import versa_logo from './Versa/versa_agency_black_logo.svg'
+import versa_approach from './Versa/versa blog.png'
+
 import bourbon_sneak from './Bourbon/bourbon_sneak.png'
 import don from './Bourbon/don williams crop.jpg'
 import bourbon_portfolio from './Bourbon/portfolio.pdf'
+import bourbon_hero from './Bourbon/before and after.jpg'
+import bourbon_approach from './Bourbon/bourbon approach.png'
+import bourbon_client from './Bourbon/about.jpg'
+
 import ige_sneak from './IGE/ige_sneak.png'
 import justin from './IGE/justin.jpg'
 import ige_portfolio from './IGE/portfolio.pdf'
+import ige_hero from './IGE/ige logo inverted.png'
+import ige_approach from './IGE/ige approach.png'
+
 import kirby from './KA/1740188601864.jpg'
+
 import isha_sneak from './Isha/sneakpeak.png'
+import isha_hero from './Isha/2J1A1449 final.jpg'
+import isha_approach from './Isha/isha_approach2.jpg'
+import isha_portfolio from './Isha/portfolio.pdf'
 
 
 
@@ -36,6 +58,7 @@ const experiences = [
         desc1: "How I helped a bride deliver a uniquely personal experience to every guest — built and shipped in under 24 hours.",
         desc2: "The right invitation, for the right guest, automatically — before the champagne was even poured.",
         hero: {
+            heroImage: isha_hero,
             heroTitle: "Turning Wedding Invitations into ",
             heroTitlePurple: "Personalized Experiences",
             heroDesc1: "How I helped a bride deliver a uniquely personal experience to every guest — built and shipped in under 24 hours.",
@@ -59,14 +82,15 @@ const experiences = [
             featureDesc6: "The website had to be easy to use for the guest and easy to update for the bride",
         },
         approach: {
-            approachImg: approach_banner,
-            approachDesc: "I wasn’t just there to fix a broken website. I was there to:",
+            approachImg: isha_approach,
+            role: "Web Developer",
+            approachDesc: "I wasn’t just there to create a website. I was there to:",
             approach1: "Understand exactly how the bride envisioned her guests experiencing the invitation",
             approach2: "Design a system that could scale across hundreds of guests without breaking",
             approach3: "Deliver something polished and personal — on an impossible timeline",
         },
         steps:{
-            portfolio: joie_portfolio,
+            portfolio: isha_portfolio,
             stepTitle1: "Database",
             stepDesc1: "Structured a Firestore database to store and look up guests by email address.",
             stepTitle2: "Logic",
@@ -95,12 +119,12 @@ const experiences = [
             duringDesc2: "Progress reports",
             duringDesc3: "Faster development",
             duringDesc4: "More peace of mind",
-            afterTitle: "30 leads/month",
+            afterTitle: "",
             afterDesc1: "6 unique invitations served dynamically",
             afterDesc2: "Guests recognized by email on arrival",
             afterDesc3: "Firestore database managing the full guest list",
             afterDesc4: "Delivered in under 24 hours",
-            portfolio: joie_portfolio,
+            portfolio: isha_portfolio,
         },
         testimonial:{
             testimonialName: "Isha Agarwal",
@@ -120,6 +144,7 @@ const experiences = [
         desc1: "How I helped a creative founder untangle broken automations, reconnect her user experience, and rebuild trust in her website — without starting over.",
         desc2: "After I worked with her, her user experience was more professional, and she experienced more success and confidence in her business.",
         hero: {
+            heroImage: joie_hero,
             heroTitle: "Turning Tech Chaos into a System that ",
             heroTitlePurple: "Supports Growth",
             heroDesc1: "How I helped a creative founder untangle broken automations, reconnect her user experience, and rebuild trust in her website — without starting over.",
@@ -143,7 +168,8 @@ const experiences = [
             featureDesc6: "Trying to be both a present parent and a business owner — and feeling like she was failing at both ",
         },
         approach: {
-            approachImg: approach_banner,
+            approachImg: joie_approach,
+            role: "Web Developer",
             approachDesc: "I wasn’t just there to fix a broken website. I was there to:",
             approach1: "Understand how she thinks",
             approach2: "Understand how her business actually operates",
@@ -189,9 +215,9 @@ const experiences = [
         testimonial:{
             testimonialName: "Kelsi Taylor",
             testimonialNamePurple: "Review",
-            testimonialDesc: "Kelsi loved the work I did with her. I was able to bring her website and business to new places. More than that, her confidence in technology increased. </p>",
+            testimonialDesc: "Kelsi loved the work I did with her. I was able to bring her website and business to new places. More than that, her confidence in technology increased.",
             testimonialTitle: "Amazing User Experience",
-            testimonial: "Arsh is what tech support looks like if it came with a chai tea latte, a soothing voice and a plan that actually works!",
+            testimonial: `"Arsh is what tech support looks like if it came with a chai tea latte, a soothing voice and a plan that actually works!"`,
             testimonialImage: kelsi,
             testimonialPosition: "CEO, The Joie Lab"
         }
@@ -204,6 +230,7 @@ const experiences = [
         desc1: "How I helped a bilingual family coach untangle tech decisions and create a sales page to launch her book, consultancy, and future course.",
         desc2: "After I created the sales page for her, the coach was able to launch her book and take her website forward.",
         hero: {
+            heroImage: bilingual_hero,
             heroTitle: "From Tech Overwhelm to a ",
             heroTitlePurple: "Clear Path to Launch",
             heroDesc1: "How I helped a bilingual family coach untangle tech decisions and create a sales page to launch her book, consultancy, and future course.",
@@ -227,6 +254,8 @@ const experiences = [
             featureDesc6: "Too much troubleshooting to bring her vision to life",
         },
         approach: {
+            approachImg: bilingual_approach,
+            role: "Web Developer",
             approachDesc: "This wasn't just about choosing tools. She didn't need someone to hand her a list of software. She needed someone who could: ",
             approach1: "Understand what she was trying to build.",
             approach2: "Filter the noise and translate ideas into systems.",
@@ -271,7 +300,7 @@ const experiences = [
             testimonialNamePurple: "Review",
             testimonialDesc: "She was really happy with the work I did and the tech decisions I helped her make to get her book launched.",
             testimonialTitle: "Amazing User Experience",
-            testimonial: "Thanks so much for all the hard work. I would love to continue working with you. I am happy [with the work you did].",
+            testimonial: `"Thanks so much for all the hard work. I would love to continue working with you. I am happy [with the work you did]."`,
             testimonialImage: cannings,
             testimonialPosition: "CEO, Bilingual Roadmap"
         }
@@ -322,7 +351,7 @@ const experiences = [
             stepDesc3: "Troubleshooting to ensure proper functionality.",
         },
         client: {
-
+            clientImg: tqme_client,
             clientTitle: "Kirby ",
             clientTitlePurple: "Ann",
             clientDesc: "Kirby was a Fractional COO and Operations Manager. Now she helps ambitious service-based entrepreneurs and thought leaders get off the hamster wheel by identifying the patterns keeping them stuck and making the identity shifts that create sustainable growth.",
@@ -364,7 +393,7 @@ const experiences = [
         desc1: "Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.",
         desc2: "The client was very happy with the redesign and felt much more confident about advertising their business moving forward.",
         hero: {
-
+            heroImage: tqme_hero,
             heroTitle: "Restaurant Website Relaunch ",
             heroTitlePurple: "Under Pressure",
             heroDesc1: "Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.",
@@ -389,6 +418,8 @@ const experiences = [
             featureDesc6: "Team dynamics required me to pick up slack and get the job done.",
         },
         approach: {
+            approachImg: tqme_approach,
+            role: "Project Manager",
             approachDesc: "Deliver a brand-aligned, functional restaurant website that: ",
             approach1: "Reflected the new dining experience<",
             approach2: "Was easy to navigate and fun to use",
@@ -404,7 +435,7 @@ const experiences = [
             stepDesc3: "Worked with my manager to communicate effectively with their manager in hostile conditions.",
         },
         client: {
-
+            clientImg: tqme_client,
             clientTitle: "The Quarry ",
             clientTitlePurple: "Modern Eatery",
             clientDesc: "The new and improved Quarry was started by Jeff Antonelli and Geoff Harrington – two friends who have known each other since the 7th grade. Their families have owned their own businesses in the past. With a great selection of seafood, drinks, and shareable plates, they are proud to share with you the updated version of the same restaurant you have always loved.",
@@ -437,7 +468,8 @@ const experiences = [
             testimonialNamePurple: "Review",
             testimonialDesc: "The restaurant owner and their project manager were really happy with our work and turnaround time. We were able to get the website properly updated in time for their launch.",
             testimonialTitle: "Amazing User Experience",
-            testimonialImage: tqme,
+            testimonial: "",
+            testimonialImage: tqme_hero,
             testimonialPosition: "The Quarry Modern Eatery, Owner and PM"
         },
     },
@@ -449,7 +481,7 @@ const experiences = [
         desc1: "Francesco wanted to modernize the agency's website, update the portfolio, and optimize the User Experience.",
         desc2: "As an employee and project manager, I was able to lead the project to his satisfaction.",
         hero: {
-
+            heroImage: versa_logo,
             heroTitle: "Wed Dev Agency ",
             heroTitlePurple: "Redesign",
             heroDesc1: "Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.",
@@ -474,7 +506,8 @@ const experiences = [
             featureDesc6: "Effort needed to stay focused on functional improvements rather than fancy effects",
         },
         approach: {
-
+            approachImg: versa_approach,
+            role: "Project Manager",
             approachDesc: "Create a modern, easy-to-navigate agency website that: ",
             approach1: "Clearly showcases the agency's capabilities",
             approach2: "Works seamlessly across desktop and mobile",
@@ -490,7 +523,7 @@ const experiences = [
             stepDesc3: "Completed this project along with 1-2 other projects in the pipeline, managing developer time appropriately.",
         },
         client: {
-
+            clientImg: francesco,
             clientTitle: "Versa ",
             clientTitlePurple: "Agency",
             clientDesc: "Versa Agency creates websites designed to boost conversions and customer retention, reduce marketing costs, automate sales and customer service, and outperform your competition. The agency offers digital marketing, SEO and web design.",
@@ -523,7 +556,7 @@ const experiences = [
             testimonialNamePurple: "Review",
             testimonialDesc: "The agency owner was really happy with our work and turnaround time. We were able to get the website and user experience properly updated.",
             testimonialTitle: "Amazing User Experience",
-            testimonial: "Arsh is what tech support looks like if it came with a chai tea latte, a soothing voice and a plan that actually works!",
+            testimonial: "",
             testimonialImage: francesco,
             testimonialPosition: "Owner"
         }
@@ -536,7 +569,7 @@ const experiences = [
         desc1: "Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.",
         desc2: "The client was very happy with the redesign and felt much more confident about advertising their business moving forward.",
         hero: {
-
+            heroImage: bourbon_hero,
             heroTitle: "From Antiquated Website to a ",
             heroTitlePurple: "Smooth User Experience",
             heroDesc1: "Working at an agency, I managed the transformation of a website from a clunky storefront to a gleaming customer experience without impacting business or losing the brand experience.",
@@ -561,7 +594,8 @@ const experiences = [
             featureDesc6: "Decisions had to balance immediate business needs with long-term growth.",
         },
         approach: {
-
+            approachImg: bourbon_approach,
+            role: "Project Manager",
             approachDesc: "Transform the website into a modern, seamless customer experience while: ",
             approach1: "Preserving brand identity while improving usability and design",
             approach2: "Maintaining business continuity",
@@ -577,9 +611,9 @@ const experiences = [
             stepDesc3: "Walked the client through the changes we made at every step, ensuring satisfaction.",
         },
         client: {
-
-            clientTitle: "Don Williams",
-            clientTitlePurple: "Review",
+            clientImg: bourbon_client,
+            clientTitle: "Don ",
+            clientTitlePurple: "Williams",
             clientDesc: "I was curious that at different distillery locations I would hear conflicting or confusing information regarding the history or provenance of bourbon.  I decided to attend Moonshine University in Louisville, so I could better understand the history and separate fact from fiction.  After acquiring the Executive Bourbon Steward designation, I began to look into the bourbon world with a thirst for knowledge. Now, after completing sixty-plus distillery tours, my quest to pass on helpful information continues.",
             valueTitle1: "First Tour",
             valueDesc1: "I was astounded at how friendly the locals were during our visit and how eager they were to welcome people from out of town.",
@@ -610,7 +644,7 @@ const experiences = [
             testimonialNamePurple: "Review",
             testimonialDesc: "Don was really happy the agency's work. My communication with him, as well as my work managing the team, were major reasons for his satisfaction.",
             testimonialTitle: "Amazing User Experience",
-            testimonial: "Not only did [the agency] perform their work as promised, but they kept me informed and updated every step of the way. Every interaction with [the agency] was professional and the results of their work exceeded my expectations. I highly recommend using their services.",
+            testimonial: `"Not only did [the agency] perform their work as promised, but they kept me informed and updated every step of the way. Every interaction with [the agency] was professional and the results of their work exceeded my expectations. I highly recommend using their services."`,
             testimonialImage: don,
             testimonialPosition: "Owner"
         },
@@ -623,7 +657,7 @@ const experiences = [
         desc1: "A game development studio building a custom website needed it to function as both a user portal and digital storefront.",
         desc2: "The platform had to integrate new features while maintaining compatibility with existing systems — all while supporting a growing user base.",
         hero: {
-
+            heroImage: ige_hero,
             heroTitle: "Custom Website for a ",
             heroTitlePurple: "Game Studio",
             heroDesc1: "A game development studio building a custom website needed it to function as both a user portal and digital storefront.",
@@ -631,7 +665,7 @@ const experiences = [
         },
         challenge: {
 
-            challengeTitle: "Website",
+            challengeTitle: "Website ",
             challengeTitlePurple: "Redesign and Update",
             challengeDesc: "The studio's website needed a redesign to align better with the brand, inspire and excite customers and expand functionality.",
             featureTitle1: "Brand Alignment",
@@ -648,7 +682,8 @@ const experiences = [
             featureDesc6: "Coordinating across develops, tech lead and CEO",
         },
         approach: {
-
+            approachImg: ige_approach,
+            role: "Web Developer",
             approachDesc: "Create a responsive, reliable website that: ",
             approach1: "Served as both a user portal and storefront",
             approach2: "Integrated cleanly with existing backend functionality",
@@ -664,7 +699,7 @@ const experiences = [
             stepDesc3: "Updated website to align better with brand, excite customers, and expand functionality",
         },
         client: {
-
+            clientImg: justin,
             clientTitle: "Intergalactic ",
             clientTitlePurple: "Education",
             clientDesc: "I'm a blockchain advocate, technology investor, and aspiring theologian with advanced degrees in international space policy and computer science. I am on a mission to spread The Good News on Earth and throughout the solar system. As one who feels God's love upon us every day, I know that we are destined for the stars.",

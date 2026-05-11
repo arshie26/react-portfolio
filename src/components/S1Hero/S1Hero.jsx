@@ -1,5 +1,4 @@
 import React from 'react'
-import Picture from "./Picture1.png"
 import '../../pages/Project/Project.css'
 
 const Hero = (props) => {
@@ -14,10 +13,10 @@ const Hero = (props) => {
                         <h1 className="project__section--title hero__title">{props.desc.heroTitle}<span className="purple">{props.desc.heroTitlePurple}</span></h1>
                         <p className="section__description hero__description">{props.desc.heroDesc1}</p>
                         <p className="section__description hero__description">{props.desc.heroDesc2}</p>
-                        <button className="email__button btn" onclick="toggleModal()">Get Started</button>
+                        <button className="email__button btn" href="#challenge">Get Started</button>
                     </div>
                     <figure className="hero__image--container">
-                        <img className="hero__image" src={Picture} />
+                        <img className="hero__image" src={props.desc.heroImage} />
                     </figure>
                 </div>
             </div>

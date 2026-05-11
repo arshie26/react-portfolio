@@ -1,6 +1,10 @@
 import React from 'react'
 import HomeNav from '../../components/HomeNav/HomeNav'
 import './Home.css'
+import css from '../../assets/css-131-722685.png'
+import html from '../../assets/HTML5_Badge.svg.png'
+import js from '../../assets/javascript-1-225993.png'
+import react from '../../assets/react.svg'
 import Experience from '../../components/Experience/Experience'
 import experiences from '../../assets/experiences.js'
 
@@ -35,8 +39,38 @@ const Home = () => {
                         </div>
                 </a>
             </div>
+            
+            <div className="languages__container">
+                <h1>Languages</h1>
+                <div className='languages'>
+                    <div className="language">
+                        <figure className="language__img--wrapper">
+                            <img className="language__img" src={html} alt="" class="language__img html" />
+                        </figure>
+                        <span className="language__name">HTML</span>
+                    </div>
+                    <div className="language">
+                        <figure className="language__img--wrapper">
+                            <img className="language__img" src={css} alt="" class="language__img css" />
+                        </figure>
+                        <span className="language__name">CSS</span>
+                    </div>
+                    <div className="language">
+                        <figure className="language__img--wrapper">
+                            <img className="language__img" src={js} alt="" class="language__img js" />
+                        </figure>
+                        <span className="language__name">JavaScipt</span>
+                    </div>
+                    <div className="language">
+                        <figure className="language__img--wrapper">
+                            <img className="language__img" src={react} alt="" class="language__img ts" />
+                        </figure>
+                        <span className="language__name">React</span>
+                    </div>
+                </div>
+            </div>
             <section id="projects">
-                <div className="container">
+                <div className="project__container">
                     <div className="row">
                         <h1 className="section__title">Here are some of my <span class="orange">projects</span></h1>
                         
