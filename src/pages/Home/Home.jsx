@@ -5,15 +5,33 @@ import css from '../../assets/css-131-722685.png'
 import html from '../../assets/HTML5_Badge.svg.png'
 import js from '../../assets/javascript-1-225993.png'
 import react from '../../assets/react.svg'
+import semicircle from '../../assets/semi circle.svg'
+import circle from '../../assets/circle.svg'
+import squiggly from '../../assets/squiggly.svg'
+import triangle from '../../assets/triangle.svg'
 import Experience from '../../components/Experience/Experience'
 import experiences from '../../assets/experiences.js'
 
 
 const Home = () => {
 
+    function moveBackground(event){
+        const shapes = document.querySelectorAll(".shape");
+        const scaleFactor = 1/20;
+        const x = event.clientX * scaleFactor;
+        const y = event.clientY * scaleFactor;
+        console.log(x, y);
+    
+        for(let i = 0; i < shapes.length; ++i){
+            const isOdd = i % 2 !== 0;
+            const boolInt = isOdd? -1:1;
+            shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
+        }
+    }
+
     return (
         <div>
-            <div id='landing-page'>
+            <div id='landing-page' onMouseMove={moveBackground}>
                 <HomeNav />
                 <header className="header">
                     <div className="header__content">
@@ -34,6 +52,15 @@ const Home = () => {
                         </div>
                     </div>
                 </header>
+                <img src={semicircle} className="shape shape--0" />
+                <img src={circle} className="shape shape--1" />
+                <img src={squiggly} className="shape shape--2" />
+                <img src={circle} className="shape shape--3" />
+                <img src={triangle} className="shape shape--4" />
+                <img src={circle} className="shape shape--5" />
+                <img src={squiggly} className="shape shape--6" />
+                <img src={circle} className="shape shape--7" />
+                <img src={semicircle} className="shape shape--8" />
                 <a className="scroll" href="#projects">
                         <div className="scroll__icon click">
                         </div>

@@ -1,20 +1,23 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../../pages/Project/Project.css'
 import logo from '../../assets/A logo-white.png'
 
 const Navbar = () => {
 
-    return (
+    const navigate = useNavigate();
 
-        
+    return (
         
         <nav className="project__nav">
-            <div className="company__name--wrapper">
-                <figure className="logo__wrapper">
-                    <img className="logo__image" src={logo} />
-                </figure>
-                <h1>Arsh Agarwal</h1>
-            </div>
+            <a onClick={() => {navigate("/")}}>
+                <div className="company__name--wrapper">
+                    <figure className="logo__wrapper">
+                        <img className="logo__image" src={logo} />
+                    </figure>
+                    <h1>Arsh Agarwal</h1>
+                </div>
+            </a>
             <ul className="nav__links">
                 <li><a href="../index.html" className="nav__link">Home</a></li>
                 <li><a href="#challenge" className="nav__link">Challenge</a></li>
