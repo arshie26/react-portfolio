@@ -41,6 +41,7 @@ import isha_sneak from './Isha/sneakpeak.png'
 import isha_hero from './Isha/2J1A1449 final.jpg'
 import isha_approach from './Isha/isha_approach2.jpg'
 import isha_portfolio from './Isha/portfolio.pdf'
+import isha_client from './Isha/isha_client.jpg'
 
 
 
@@ -99,7 +100,7 @@ const experiences = [
             stepDesc3: "Launched a fully functional, personalized wedding invitation site within 24 hours of kickoff.",
         },
         client: {  
-            clientImg: kelsi,
+            clientImg: isha_client,
             clientTitle: "Isha Agarwal",
             clientTitlePurple: "",
             clientDesc: "A bride with a vision and a deadline. She wanted every guest to open the site and feel like the invitation was written just for them. With 6 different guest tiers and a hard launch window, she needed someone who could move fast while maintaining quality.",
@@ -132,7 +133,7 @@ const experiences = [
             testimonialDesc: "Isha was very grateful for the webite I built for her. She especially appreciated how it so easily managed the tedious guest tiers",
             testimonialTitle: "Amazing User Experience",
             testimonial: "",
-            testimonialImage: kelsi,
+            testimonialImage: isha_client,
             testimonialPosition: "Law Associate"
         }
     },
