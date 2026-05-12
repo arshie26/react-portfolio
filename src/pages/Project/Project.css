@@ -557,7 +557,6 @@ input:focus, textarea:focus{
 }
 
 .feature__icon{
-    width: 100%;
     border: 1px solid #e5e7eb;
     border-radius: 40px;
     padding: 20px;
@@ -618,6 +617,7 @@ input:focus, textarea:focus{
 
 .quality__bullet p{
     font-size: 18px;
+    margin-left: 15px;
 }
 
 .quality__bullet i{
@@ -1820,7 +1820,7 @@ i{
     }
 
     .feature__icon--container{
-        padding-right: 40px;
+        width: auto;
     }
 
     .feature__desc--container{

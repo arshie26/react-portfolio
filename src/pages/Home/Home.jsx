@@ -11,6 +11,7 @@ import squiggly from '../../assets/squiggly.svg'
 import triangle from '../../assets/triangle.svg'
 import Experience from '../../components/Experience/Experience'
 import experiences from '../../assets/experiences.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Home = () => {
@@ -29,10 +30,21 @@ const Home = () => {
         }
     }
 
+    let isModalOpen = false;
+    
+    function toggleModal(){
+        if(isModalOpen){
+            isModalOpen = false;
+            return document.body.classList.remove("modal--open");
+        }
+        isModalOpen = true;
+        document.body.classList += " modal--open";
+    }
+
     return (
         <div>
             <div id='landing-page' onMouseMove={moveBackground}>
-                <HomeNav />
+                <HomeNav toggleModal={toggleModal}/>
                 <header className="header">
                     <div className="header__content">
                         <h1 className="title">Hey</h1>
@@ -66,7 +78,70 @@ const Home = () => {
                         </div>
                 </a>
             </div>
-            
+            <div className="modal">
+                <div className="modal__half modal__about">
+                    <h1 className="modal__title">Here's a bit about me.</h1>
+                    <h6 className="modal__sub-title">Frontend Software Engineer.</h6>
+                    <p className="modal__para">I'm a 21 year-old Australian frontend <b className="orange">software engineer</b> with experience developing websites for top-tech companies like <b class="orange">Google and Canva.</b>
+                        I currently solve extremely difficult engineering problems every day with React, TypeScript and MobX in Canva's Video team. 
+                    </p>
+                    <div className="modal__languages">
+                        <div className="language">
+                            <figure className="language__img--wrapper">
+                                <img className="language__img" src={html} alt="" class="language__img html" />
+                            </figure>
+                            <span className="language__name">HTML</span>
+                        </div>
+                        <div className="language">
+                            <figure className="language__img--wrapper">
+                                <img className="language__img" src={css} alt="" class="language__img css"/>
+                            </figure>
+                            <span className="language__name">CSS</span>
+                        </div>
+                        <div className="language">
+                            <figure className="language__img--wrapper">
+                                <img className="language__img" src={js} alt="" class="language__img js"/>
+                            </figure>
+                            <span className="language__name">JavaScipt</span>
+                        </div>
+                        <div className="language">
+                            <figure className="language__img--wrapper">
+                                <img className="language__img" src={react} alt="" class="language__img ts"/>
+                            </figure>
+                            <span className="language__name">React</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div className="modal__half modal__contact">
+                    <figure className="close__icon" onClick={toggleModal}>
+                        <FontAwesomeIcon icon="times" />
+                    </figure>
+                    <h3 className="modal__title modal__title--contact">Let's have a chat!</h3>
+                    <h3 className="modal__sub-title modal__sub-title--contact">I'm currenty open to new opportunities</h3>
+                    <form id="contact__form" onsubmit="contact(event)">
+                        <div className="form__item">
+                            <label className="form__item--label" value="Name">Name</label>
+                            <input className="input" name="user_name" type="text"></input>
+                        </div>
+                        <div class="form__item">
+                            <label className="form__item--label" value="E-mail">Email</label>
+                            <input className="input" name="user_email" type="email"></input>
+                        </div>
+                        <div className="form__item">
+                            <label className="form__item--label" value="Message">Message</label>
+                            <textarea className="input" name="message" type="text"></textarea>
+                        </div>
+                        <button id="contact__submit" class="form__submit" type="submit">Send it my way</button>
+                    </form>
+                    <div className="modal__overlay modal__overlay--loading">
+                        <i className="fas fa-spinner"></i>
+                    </div>
+                    <div className="modal__overlay modal__overlay--success">
+                        Thanks for the message! Looking forward to speaking with you soon.
+                    </div>
+                </div>
+            </div>
             <div className="languages__container">
                 <h1>Languages</h1>
                 <div className='languages'>

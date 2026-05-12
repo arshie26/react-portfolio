@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../assets/A logo-white.png'
 import '../../pages/Home/Home.css'
 
-const HomeNav = () => {
+const HomeNav = (props) => {
 
     return (
         
@@ -22,7 +22,7 @@ const HomeNav = () => {
                     
                     ">Projects</a>
                 </li>
-                <li className="nav__link" onClick={() => {toggleModal()}}>
+                <li className="nav__link" onClick={() => {props.toggleModal()}}>
                     <a className="
                     
                     ">Contact</a>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../../pages/Project/Project.css'
 
 const Approach = (props) => {
@@ -14,15 +15,15 @@ const Approach = (props) => {
                                 <p class="section__description">{props.desc.approachDesc}</p>
                                     <div>
                                         <div class="quality__bullet">
-                                            <i class="fa-regular fa-lightbulb"></i>
+                                            <FontAwesomeIcon icon="lightbulb" />
                                             <p>{props.desc.approach1}</p>
                                         </div>
                                         <div class="quality__bullet">
-                                            <i class="fa-solid fa-gear"></i>
+                                            <FontAwesomeIcon icon="gear" />
                                             <p>{props.desc.approach2}</p>
                                         </div>
                                         <div class="quality__bullet">
-                                            <i class="fa-solid fa-rocket"></i>
+                                            <FontAwesomeIcon icon="rocket" />
                                             <p>{props.desc.approach3}</p>
                                         </div>
                                         
