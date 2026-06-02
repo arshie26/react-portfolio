@@ -642,6 +642,7 @@ MODAL
 .project__title{
     color: white;
     transition: all 300ms ease;
+    font-size: xx-large;
 }
 
 .project__title:hover{
