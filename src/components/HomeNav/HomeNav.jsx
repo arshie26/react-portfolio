@@ -12,12 +12,6 @@ const HomeNav = (props) => {
             </figure>
             <ul className="nav__link--list">
                 <li className="nav__link">
-                    <a className="
-                    
-                    nav__link--mobile
-                    ">About</a>
-                </li>
-                <li className="nav__link">
                     <a href="#projects" className="
                     
                     ">Projects</a>

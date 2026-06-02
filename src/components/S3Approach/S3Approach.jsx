@@ -29,7 +29,7 @@ const Approach = (props) => {
                                         
                                     </div>
                             </div>
-                            <a href="#" class="btn__container"><button onclick="toggleModal()" class="btn default-btn">Get Started</button></a>
+                            <a href="#" className="btn__container"><button onClick={() => {props.toggleModal(false)}} class="btn default-btn">Get Started</button></a>
                         </div>
                         <figure class="section__image--container">
                             <img class="section__image" src={props.desc.approachImg} />

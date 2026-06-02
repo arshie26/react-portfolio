@@ -51,7 +51,7 @@ const Client = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <a class="btn__container" href="#"><button onclick="toggleModal()" class="btn default-btn">Learn More</button></a>
+                                <a class="btn__container" href="#"><button onClick={() => {props.toggleModal(false)}} class="btn default-btn">Learn More</button></a>
                             </div>
                         </div>
                         <figure class="section__image--container">

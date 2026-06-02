@@ -1,5 +1,7 @@
 import React from 'react'
 import HomeNav from '../../components/HomeNav/HomeNav'
+import Modal from '../../components/Modal/Modal'
+import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 import css from '../../assets/css-131-722685.png'
 import html from '../../assets/HTML5_Badge.svg.png'
@@ -12,6 +14,7 @@ import triangle from '../../assets/triangle.svg'
 import Experience from '../../components/Experience/Experience'
 import experiences from '../../assets/experiences.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 const Home = () => {
@@ -21,7 +24,7 @@ const Home = () => {
         const scaleFactor = 1/20;
         const x = event.clientX * scaleFactor;
         const y = event.clientY * scaleFactor;
-        console.log(x, y);
+        //console.log(x, y);
     
         for(let i = 0; i < shapes.length; ++i){
             const isOdd = i % 2 !== 0;
@@ -30,9 +33,9 @@ const Home = () => {
         }
     }
 
-    let isModalOpen = false;
     
-    function toggleModal(){
+    
+    function toggleModal(isModalOpen){
         if(isModalOpen){
             isModalOpen = false;
             return document.body.classList.remove("modal--open");
@@ -49,17 +52,17 @@ const Home = () => {
                     <div className="header__content">
                         <h1 className="title">Hey</h1>
                         <h1 className="title--secondary">I'm Arsh</h1>
-                        <p className="header__para">I'm a <span className="orange">Frontend Software Engineer</span> with a strong passion for building web applications with great user experiences.</p>
+                        <p className="header__para">I'm a web developer and <span className="orange">technical project manager</span> who helps businesses turn clunky, frustrating digital experiences into streamlined systems that support growth, trust, and customer experience.</p>
                         <p className="header__para">Here's a bit more <a onClick={() => {toggleModal()}} className="orange">about me</a></p>
                         <div className="social__list">
                             <a href="https://www.linkedin.com/in/arshie26/" className="social__link">
-                                <i className="fa-brands fa-linkedin-in"></i>
+                                <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
-                            <a href="" className="social__link">
-                                <i className="fa-brands fa-github"></i>
+                            <a href="https://github.com/arshie26" className="social__link">
+                                <FontAwesomeIcon icon={faGithub} />
                             </a>
                             <a href="Arsh Agarwal web dev resume current 2026.pdf" download className="social__link" target="_blank">
-                                <i className="fa-solid fa-file-pdf"></i>
+                                <FontAwesomeIcon icon='file-pdf' />
                             </a>
                         </div>
                     </div>
@@ -78,70 +81,7 @@ const Home = () => {
                         </div>
                 </a>
             </div>
-            <div className="modal">
-                <div className="modal__half modal__about">
-                    <h1 className="modal__title">Here's a bit about me.</h1>
-                    <h6 className="modal__sub-title">Frontend Software Engineer.</h6>
-                    <p className="modal__para">I'm a 21 year-old Australian frontend <b className="orange">software engineer</b> with experience developing websites for top-tech companies like <b class="orange">Google and Canva.</b>
-                        I currently solve extremely difficult engineering problems every day with React, TypeScript and MobX in Canva's Video team. 
-                    </p>
-                    <div className="modal__languages">
-                        <div className="language">
-                            <figure className="language__img--wrapper">
-                                <img className="language__img" src={html} alt="" class="language__img html" />
-                            </figure>
-                            <span className="language__name">HTML</span>
-                        </div>
-                        <div className="language">
-                            <figure className="language__img--wrapper">
-                                <img className="language__img" src={css} alt="" class="language__img css"/>
-                            </figure>
-                            <span className="language__name">CSS</span>
-                        </div>
-                        <div className="language">
-                            <figure className="language__img--wrapper">
-                                <img className="language__img" src={js} alt="" class="language__img js"/>
-                            </figure>
-                            <span className="language__name">JavaScipt</span>
-                        </div>
-                        <div className="language">
-                            <figure className="language__img--wrapper">
-                                <img className="language__img" src={react} alt="" class="language__img ts"/>
-                            </figure>
-                            <span className="language__name">React</span>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div className="modal__half modal__contact">
-                    <figure className="close__icon" onClick={toggleModal}>
-                        <FontAwesomeIcon icon="times" />
-                    </figure>
-                    <h3 className="modal__title modal__title--contact">Let's have a chat!</h3>
-                    <h3 className="modal__sub-title modal__sub-title--contact">I'm currenty open to new opportunities</h3>
-                    <form id="contact__form" onsubmit="contact(event)">
-                        <div className="form__item">
-                            <label className="form__item--label" value="Name">Name</label>
-                            <input className="input" name="user_name" type="text"></input>
-                        </div>
-                        <div class="form__item">
-                            <label className="form__item--label" value="E-mail">Email</label>
-                            <input className="input" name="user_email" type="email"></input>
-                        </div>
-                        <div className="form__item">
-                            <label className="form__item--label" value="Message">Message</label>
-                            <textarea className="input" name="message" type="text"></textarea>
-                        </div>
-                        <button id="contact__submit" class="form__submit" type="submit">Send it my way</button>
-                    </form>
-                    <div className="modal__overlay modal__overlay--loading">
-                        <i className="fas fa-spinner"></i>
-                    </div>
-                    <div className="modal__overlay modal__overlay--success">
-                        Thanks for the message! Looking forward to speaking with you soon.
-                    </div>
-                </div>
-            </div>
+            <Modal toggleModal={toggleModal} />
             <div className="languages__container">
                 <h1>Languages</h1>
                 <div className='languages'>

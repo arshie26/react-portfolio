@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from '../../components/Modal/Modal'
 import Navbar from '../../components/Navbar/Navbar'
 import Hero from '../../components/S1Hero/S1Hero'
 import Challenge from '../../components/S2Challenge/S2Challenge'
@@ -19,6 +20,15 @@ const Project = (props) => {
 
     let project;
 
+    function toggleModal(isModalOpen){
+        if(isModalOpen){
+            isModalOpen = false;
+            return document.body.classList.remove("modal--open");
+        }
+        isModalOpen = true;
+        document.body.classList += " modal--open";
+    }
+
     function getProject(){
         
         project = props.experiences.filter((projectCycler) => {
@@ -32,14 +42,15 @@ const Project = (props) => {
     return (
         <>
             <Navbar />
-            <Hero desc={project.hero} />
+            <Modal toggleModal={toggleModal} />
+            <Hero desc={project.hero} toggleModal={toggleModal} />
             <Challenge  desc={project.challenge} />
-            <Approach desc={project.approach} />
+            <Approach desc={project.approach} toggleModal={toggleModal} />
             <Steps desc={project.steps}/>
-            <Client desc={project.client}/>
-            <Transformation desc={project.transformation} />
+            <Client desc={project.client} toggleModal={toggleModal}/>
+            <Transformation desc={project.transformation} toggleModal={toggleModal} />
             <Testimonials desc={project.testimonial}/>
-            <Start />
+            <Start toggleModal={toggleModal} />
             <Footer />
         </>
     )

@@ -1,10 +1,12 @@
 import joielab_sneak from './Joie/joielab_sneak.png'
+import joielab_sneak_react from './Joie/joielab_sneak_react.png'
 import joie_hero from './Joie/joielab_hero.png'
 import kelsi from './Joie/kelsi portrait square.jpg'
 import joie_portfolio from './Joie/portfolio.pdf'
 import joie_approach from './Joie/shopping banner.webp'
 
 import bilingual_sneak from './Bilingual/bilingual_sneak.png'
+import bilingual_sneak_react from './Bilingual/bilingual_sneak_react.png'
 import cannings from './Bilingual/Katharine Cannings.jpg'
 import bilingual_portfolio from './Bilingual/portfolio.pdf'
 import bilingual_hero from './Bilingual/Master_Logo-03.jpg'
@@ -37,13 +39,13 @@ import ige_approach from './IGE/ige approach.png'
 
 import kirby from './KA/1740188601864.jpg'
 
-import isha_sneak from './Isha/sneakpeak.png'
+import isha_sneak from './Isha/portfolio screenshot 2.png'
 import isha_hero from './Isha/2J1A1449 final.jpg'
 import isha_approach from './Isha/isha_approach2.jpg'
 import isha_portfolio from './Isha/portfolio.pdf'
 import isha_client from './Isha/isha_client.jpg'
 
-
+import stacy_sneak from './Stacy/stacy_sneak.png'
 
 
 
@@ -51,6 +53,30 @@ import isha_client from './Isha/isha_client.jpg'
 
 
 const experiences = [
+    {
+        project: "https://react-transformations.vercel.app/joielab",
+        sneak: joielab_sneak_react,
+        title: "Joie Lab",
+        language: "Claude + React",
+        desc1: "How I helped a creative founder untangle broken automations, reconnect her user experience, and rebuild trust in her website — without starting over.",
+        desc2: "After I worked with her, her user experience was more professional, and she experienced more success and confidence in her business."
+    },
+    {
+        project: "https://react-transformations.vercel.app/bilingualreact2",
+        sneak: bilingual_sneak_react,
+        title: "Bilingual Roadmap",
+        language: "Claude + React",
+        desc1: "How I helped a bilingual family coach untangle tech decisions and create a sales page to launch her book, consultancy, and future course.",
+        desc2: "After I created the sales page for her, the coach was able to launch her book and take her website forward."
+    },
+    {
+        project: "https://react-transformations.vercel.app/stacyreact2",
+        sneak: stacy_sneak,
+        title: "Stacy Covitz",
+        language: "Claude + React",
+        desc1: "How I helped a business owner create a new homepage and align her backend with her business processes",
+        desc2: "",
+    },
     {
         project: "isha",
         sneak: isha_sneak,

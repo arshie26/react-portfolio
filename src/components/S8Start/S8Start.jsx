@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../pages/Project/Project.css'
 
-const Start = () => {
+const Start = (props) => {
     return (
         <section id="start">
             <div class="container">
@@ -11,8 +11,8 @@ const Start = () => {
                             <h1 class="contact__title">Developers all over the world are happily using Treact.</h1>
                         </div>
                         <div class="buttons">
-                            <a href="#"><button class="start__btn start__btn--effects">Get Started</button></a>
-                            <a href="#"><button class="contact__btn start__btn--effects" onclick="toggleModal()">Contact Us</button></a>
+                            <a href="#"><button class="start__btn start__btn--effects" onClick={() => {props.toggleModal(false)}}>Get Started</button></a>
+                            <a href="#"><button class="contact__btn start__btn--effects" onClick={() => {props.toggleModal(false)}}>Contact Us</button></a>
                         </div>    
                     </div>
                 </div>

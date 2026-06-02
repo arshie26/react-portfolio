@@ -33,7 +33,7 @@ const Transformation = (props) => {
                                             
                                             <hr class="pricing__divider--bottom" />
 
-                                            <a href="#"><button class="personal__btn pricing__btn" onclick="toggleModal()">GET STARTED</button></a>
+                                            <a href="#"><button class="personal__btn pricing__btn" onClick={() => {props.toggleModal(false)}}>GET STARTED</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@ const Transformation = (props) => {
                                             
                                             <hr class="pricing__divider--bottom" />
                                             
-                                            <a href="#"><button class="business__btn pricing__btn" onclick="toggleModal()">GET STARTED</button></a>
+                                            <a href="#"><button class="business__btn pricing__btn" onClick={() => {props.toggleModal(false)}}>GET STARTED</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ const Transformation = (props) => {
                                             
                                             <hr class="pricing__divider--bottom" />
                                             
-                                            <a href="#"><button class="enterprise__btn pricing__btn" onclick="toggleModal()">GET STARTED</button></a>
+                                            <a href="#"><button class="enterprise__btn pricing__btn" onClick={() => {props.toggleModal(false)}}>GET STARTED</button></a>
                                         </div>
                                     </div>
                                 </div>
