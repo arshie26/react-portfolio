@@ -47,7 +47,7 @@ import isha_client from './Isha/isha_client.jpg'
 
 import stacy_sneak from './Stacy/stacy_sneak.png'
 
-
+import netflix_sneak from './Netflix/netflix_sneak'
 
 
 
@@ -75,6 +75,14 @@ const experiences = [
         title: "Stacy Covitz",
         language: "Claude + React",
         desc1: "How I helped a business owner create a new homepage and align her backend with her business processes",
+        desc2: "",
+    },
+    {
+        project: "https://netflix-clone-dv9smcp5b-arshie26s-projects.vercel.app/",
+        sneak: netflix_sneak,
+        title: "Netflix Clone",
+        language: "React",
+        desc1: "Created a Netflix Clone",
         desc2: "",
     },
     {
