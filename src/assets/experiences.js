@@ -47,7 +47,7 @@ import isha_client from './Isha/isha_client.jpg'
 
 import stacy_sneak from './Stacy/stacy_sneak.png'
 
-import netflix_sneak from './Netflix/netflix_sneak'
+import netflix_sneak from './Netflix/netflix_sneak.png'
 
 
 
