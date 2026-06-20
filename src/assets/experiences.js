@@ -54,6 +54,14 @@ import netflix_sneak from './Netflix/netflix_sneak.png'
 
 const experiences = [
     {
+        project: "https://react-transformations.vercel.app/stacyreact2",
+        sneak: stacy_sneak,
+        title: "Stacy Covitz",
+        language: "Claude + React",
+        desc1: "How I helped a business owner create a new homepage and align her backend with her business processes",
+        desc2: "",
+    },
+    {
         project: "https://react-transformations.vercel.app/joielab",
         sneak: joielab_sneak_react,
         title: "Joie Lab",
@@ -70,19 +78,11 @@ const experiences = [
         desc2: "After I created the sales page for her, the coach was able to launch her book and take her website forward."
     },
     {
-        project: "https://react-transformations.vercel.app/stacyreact2",
-        sneak: stacy_sneak,
-        title: "Stacy Covitz",
-        language: "Claude + React",
-        desc1: "How I helped a business owner create a new homepage and align her backend with her business processes",
-        desc2: "",
-    },
-    {
         project: "https://netflix-clone-dv9smcp5b-arshie26s-projects.vercel.app/",
         sneak: netflix_sneak,
         title: "Netflix Clone",
         language: "React",
-        desc1: "Created a Netflix Clone",
+        desc1: "",
         desc2: "",
     },
     {
